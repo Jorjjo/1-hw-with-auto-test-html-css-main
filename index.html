@@ -9,25 +9,31 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>It-incubator precourse</title>
   </head>
-  <body>
+  <body id="hw2-body">
     <!-- ЗАДАНИЕ -->
     <!-- Необходимо создать html-элементы там, где это нужно, в соответствии с правилами семантической разметки -->
     <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
 
-    <header class="header">
-      <span>IT-INCUBATOR</span>
+    <header class="header" id="hw2-header">
+      <span id="hw2-header-span">IT-INCUBATOR</span>
     </header>
 
-    <section class="main-section" data-cy="hw1-section-main-pre">
-      <h1 class="main-title">Мочалова Дарья Сергеевна</h1>
-      <p class="main-text">
+    <section
+      class="main-section"
+      data-cy="hw1-section-main-pre"
+      id="hw2-section-main-pre"
+    >
+      <h1 class="main-title" id="hw2-main-title">Мочалова Дарья Сергеевна</h1>
+      <p class="main-text" id="hw2-text">
         Люблю компьютерные игры, особенно RPG, конный спорт и хайкинг. Увлекаюсь
         digital art-ом.
       </p>
-      <img class="main-image"
+      <img
+        class="main-image"
+        id="hw2-main-image"
         src="img/tyler-smith-birdgrassthumb01.webp"
         alt="Tyler Smith Flocks Amongst the Evening Grass"
       />
@@ -39,8 +45,12 @@
       <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
     </section>
 
-    <section class="about-section" data-cy="hw1-section-about-pre">
-      <select>
+    <section
+      class="about-section"
+      data-cy="hw1-section-about-pre"
+      id="hw2-section-about-pre"
+    >
+      <select id="hw2-select-pre" name="" id="">
         <option value="">Екатеринбург</option>
         <option selected value="">Челябинск</option>
         <option value="">Ханой</option>
@@ -48,9 +58,9 @@
       </select>
       <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
 
-      <div data-cy="hw1-unordered-list-box-pre">
-        <h2 class="section-title">Любимые игры</h2>
-        <ul class="skills-list">
+      <div>
+        <h2 class="section-title" id="hw2-section-title-pre">Любимые игры</h2>
+        <ul class="skills-list" id="hw2-skills-list-pre">
           <li>Witcher 3</li>
           <li>RDR 2</li>
           <li>Skyrim</li>
@@ -63,9 +73,11 @@
         <!-- b) Маркированный список. В списке должно быть не менее 3-х элементов -->
       </div>
 
-      <div data-cy="hw1-ordered-list-box-pre">
-        <h2 class="section-title">Рейтинг любимых сериалов</h2>
-        <ol class="books-list">
+      <div>
+        <h2 class="section-title" id="hw2-section-title-pre">
+          Рейтинг любимых сериалов
+        </h2>
+        <ol class="books-list" id="hw2-books-list-pre">
           <li>Настоящий детектив</li>
           <li>Лучше звоните Солу</li>
           <li>Очень странные дела</li>
@@ -76,20 +88,27 @@
         <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
       </div>
 
-      <div data-cy="hw1-skills-box-pre">
-        <h2 class="section-title">Мои скиллы</h2>
-        <label class="label" for="box">
-          <input id="box" type="checkbox" checked />Блочная модель
+      <div>
+        <h2 class="section-title" id="hw2-section-title-pre">Мои скиллы</h2>
+        <label class="label" for="box" id="hw2-label-pre" for="1">
+          <input id="box" type="checkbox" checked name="" id="1" />Блочная
+          модель
         </label>
-        <label class="label" for="position">
-          <input id="position" type="checkbox" checked />Позиционирование
-          элементов
+        <label class="label" for="position" id="hw2-label-pre" for="2">
+          <input
+            id="position"
+            type="checkbox"
+            checked
+            name=""
+            id="2"
+          />Позиционирование элементов
         </label>
-        <label class="label" for="text">
-          <input id="text" type="checkbox" checked />Оформление текста
+        <label class="label" for="text" id="hw2-label-pre" for="3">
+          <input id="text" type="checkbox" checked name="" id="3" />Оформление
+          текста
         </label>
-        <label class="label" for="media">
-          <input id="media" type="checkbox" />Медиа-запросы
+        <label class="label" for="media" id="hw2-label-pre" for="4">
+          <input id="media" type="checkbox" name="" id="4" />Медиа-запросы
         </label>
         <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
                 - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
@@ -97,13 +116,18 @@
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
       </div>
       <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
-      <input class="text-field" type="text" placeholder="Новый скилл" />
+      <input
+        class="text-field"
+        id="hw2-text-field-pre"
+        type="text"
+        placeholder="Новый скилл"
+      />
       <!-- 6) Создай здесь кнопку “Добавить” -->
-      <button class="btn">Добавить</button>
-      <hr class="line" />
+      <button class="btn" id="hw2-btn-pre">Добавить</button>
+      <hr class="line" id="hw2-line-pre" />
       <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
 
-      <table data-cy="hw-about-table-pre" border="1">
+      <table id="hw2-about-table-pre" border="1">
         <tr>
           <th>п/п</th>
           <th>Ниманование</th>
@@ -134,8 +158,13 @@
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
                         - В последнем ряду первая ячейка должна занимать все свободное место по горизонтали (ширине). Таблицу можно заполнять любыми данными -->
     </section>
-    <footer data-cy="hw-footer-pre">
-      <a class="footer-link" href="https://it-incubator.io/">it-incubator</a>
+    <footer id="hw-footer-pre">
+      <a
+        class="footer-link"
+        id="hw-footer-link-pre"
+        href="https://it-incubator.io/"
+        >it-incubator</a
+      >
       <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
     </footer>
   </body>
