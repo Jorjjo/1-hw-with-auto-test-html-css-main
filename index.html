@@ -1,127 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
     <title>It-incubator precourse</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- ЗАДАНИЕ -->
     <!-- Необходимо создать html-элементы там, где это нужно, в соответствии с правилами семантической разметки -->
     <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
 
-    <header>
-        <span>IT-INCUBATOR</span>
+    <header class="header">
+      <span>IT-INCUBATOR</span>
     </header>
 
-    <section data-cy="hw1-section-main-pre">
-        <h1>Мочалова Дарья Сергеевна</h1>
-        <p>Люблю компьютерные игры, особенно RPG, конный спорт и хайкинг. Увлекаюсь digital art-ом.</p>
-        <img src="img/tyler-smith-birdgrassthumb01.jpg" alt="Tyler Smith Flocks Amongst the Evening Grass">
+    <section class="main-section" data-cy="hw1-section-main-pre">
+      <h1 class="main-title">Мочалова Дарья Сергеевна</h1>
+      <p class="main-text">
+        Люблю компьютерные игры, особенно RPG, конный спорт и хайкинг. Увлекаюсь
+        digital art-ом.
+      </p>
+      <img class="main-image"
+        src="img/tyler-smith-birdgrassthumb01.webp"
+        alt="Tyler Smith Flocks Amongst the Evening Grass"
+      />
 
-        <!-- 1) В этом разделе создай 3 дочерних элемента: -->
+      <!-- 1) В этом разделе создай 3 дочерних элемента: -->
 
-        <!-- a) Заголовок первого уровня со своим ФИО -->
-        <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
-        <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
+      <!-- a) Заголовок первого уровня со своим ФИО -->
+      <!-- b) Несколько строк о себе: где учишься или работаешь, хобби, увлечения. Используй тег для абзаца. Длина строки должна быть больше 50-ти симвов (пробелы и др знаки припинания тоже считаются символом) -->
+      <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
     </section>
 
-    <section data-cy="hw1-section-about-pre">
-        <select>
-            <option value="">Екатеринбург</option>
-            <option selected value="">Челябинск</option>
-            <option value="">Ханой</option>
-            <option value="">Бангкок</option>
-        </select>
-        <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
-        
-        <div data-cy="hw1-unordered-list-box-pre">
-            <h2>Любимые игры</h2>
-            <ul>
-                <li>Witcher 3</li>
-                <li>RDR 2</li>
-                <li>Skyrim</li>
-                <li>Baldur's Gate 3</li>
-                <li>Uncharted 4</li>
-            </ul>
-            <!-- 3) В этом разделе создай 2 дочерних элемента: -->
+    <section class="about-section" data-cy="hw1-section-about-pre">
+      <select>
+        <option value="">Екатеринбург</option>
+        <option selected value="">Челябинск</option>
+        <option value="">Ханой</option>
+        <option value="">Бангкок</option>
+      </select>
+      <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
 
-            <!-- a) Заголовок 2-го уровня (любимые книги/фильмы/блюда/страны... и т.п.) -->
-            <!-- b) Маркированный список. В списке должно быть не менее 3-х элементов -->
-        </div>
-        
-        <div data-cy="hw1-ordered-list-box-pre">
-            <h2>Рейтинг любимых сериалов</h2>
-            <ol>
-                <li>Настоящий детектив</li>
-                <li>Лучше звоните Солу</li>
-                <li>Очень странные дела</li>
-            </ol>
-            <!-- 3) В этом разделе создай 2 дочерних элемента: -->
+      <div data-cy="hw1-unordered-list-box-pre">
+        <h2 class="section-title">Любимые игры</h2>
+        <ul class="skills-list">
+          <li>Witcher 3</li>
+          <li>RDR 2</li>
+          <li>Skyrim</li>
+          <li>Baldur's Gate 3</li>
+          <li>Uncharted 4</li>
+        </ul>
+        <!-- 3) В этом разделе создай 2 дочерних элемента: -->
 
-            <!-- a) Заголовок 2-го уровня с другим названием (любимые книги/фильмы/блюда/страны... и т.п.) -->
-            <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
-        </div>
-        
-        <div data-cy="hw1-skills-box-pre">
-            <h2>Мои скиллы</h2>
-            <label for="box">
-                <input id="box" type="checkbox" checked>Блочная модель
-            </label>
-            <label for="position">
-                <input id="position" type="checkbox" checked>Позиционирование элементов
-            </label>
-            <label for="text">
-                <input id="text" type="checkbox" checked>Оформление текста
-            </label>
-            <label for="media">
-                <input id="media" type="checkbox">Медиа-запросы
-            </label>
-            <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
+        <!-- a) Заголовок 2-го уровня (любимые книги/фильмы/блюда/страны... и т.п.) -->
+        <!-- b) Маркированный список. В списке должно быть не менее 3-х элементов -->
+      </div>
+
+      <div data-cy="hw1-ordered-list-box-pre">
+        <h2 class="section-title">Рейтинг любимых сериалов</h2>
+        <ol class="books-list">
+          <li>Настоящий детектив</li>
+          <li>Лучше звоните Солу</li>
+          <li>Очень странные дела</li>
+        </ol>
+        <!-- 3) В этом разделе создай 2 дочерних элемента: -->
+
+        <!-- a) Заголовок 2-го уровня с другим названием (любимые книги/фильмы/блюда/страны... и т.п.) -->
+        <!-- b) Нумерованный (упорядоченный) список. В списке должно быть не менее 3-х элементов -->
+      </div>
+
+      <div data-cy="hw1-skills-box-pre">
+        <h2 class="section-title">Мои скиллы</h2>
+        <label class="label" for="box">
+          <input id="box" type="checkbox" checked />Блочная модель
+        </label>
+        <label class="label" for="position">
+          <input id="position" type="checkbox" checked />Позиционирование
+          элементов
+        </label>
+        <label class="label" for="text">
+          <input id="text" type="checkbox" checked />Оформление текста
+        </label>
+        <label class="label" for="media">
+          <input id="media" type="checkbox" />Медиа-запросы
+        </label>
+        <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
                 - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
                 - Каждый чекбокс должен быть связан со своей подписью. Для этого чекбокс должен находиться в элементе для подписи
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
-        </div>
-        <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
-        <input type="text" placeholder="Новый скилл">
-        <!-- 6) Создай здесь кнопку “Добавить” -->
-        <button>Добавить</button>
-        <hr>
-        <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
-        
-        <table data-cy="hw-about-table-pre" border="1">
-            <tr>
-                <th>Имя чемпиона</th>
-                <th>Линия</th>
-                <th>Сложность</th>
-            </tr>
-            <tr>
-                <td>Гарен</td>
-                <td>Топ</td>
-                <td>1/5</td>
-            </tr>
-            <tr>
-                <td>Физз</td>
-                <td>Мид</td>
-                <td>1/5</td>
-            </tr>
-            <tr>
-                <td>Бард</td>
-                <td>Сап</td>
-                <td>4/5</td>
-            </tr>
-            <tr>
-                <td colspan="3">Что бы написать</td>
-            </tr>
-        </table>
-            <!-- 8) В таблице сделай 5 строк и 3 столбца. 
+      </div>
+      <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
+      <input class="text-field" type="text" placeholder="Новый скилл" />
+      <!-- 6) Создай здесь кнопку “Добавить” -->
+      <button class="btn">Добавить</button>
+      <hr class="line" />
+      <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
+
+      <table data-cy="hw-about-table-pre" border="1">
+        <tr>
+          <th>п/п</th>
+          <th>Ниманование</th>
+          <th>Вес</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Сердце Африки</td>
+          <td>102г</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Улун с манго</td>
+          <td>25г</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Японская липа</td>
+          <td>25г</td>
+        </tr>
+        <tr>
+          <td colspan="2">Итого:</td>
+          <td>152г</td>
+        </tr>
+      </table>
+      <!-- 8) В таблице сделай 5 строк и 3 столбца. 
                         - В первой строке ячейки заголовков, в остальных обычные ячейки
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
                         - В последнем ряду первая ячейка должна занимать все свободное место по горизонтали (ширине). Таблицу можно заполнять любыми данными -->
     </section>
     <footer data-cy="hw-footer-pre">
-        <a href="https://it-incubator.io/">it-incubator</a>
-        <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
+      <a class="footer-link" href="https://it-incubator.io/">it-incubator</a>
+      <!-- 9) Создай здесь ссылку на наш сайт https://it-incubator.io/ (текст ссылки должен быть it-incubator) -->
     </footer>
-</body>
+  </body>
 </html>
