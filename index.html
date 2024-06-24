@@ -18,19 +18,19 @@
     <!-- ⚠️ Атрибут data-cy удалять нельзя! Он учавствует в проверке. Если его удалить, тесты не пройдут. -->
 
     <header class="header" id="hw2-header">
-      <span id="hw2-header-span">IT-INCUBATOR</span>
+      <span data-cy="hw2-header-span id="hw2-header-span">IT-INCUBATOR</span>
     </header>
 
-    <section
+    <section data-cy="hw2-section-main-pre"
       class="main-section"
       id="hw2-section-main-pre"
     >
-      <h1 class="main-title" id="hw2-main-title">Мочалова Дарья Сергеевна</h1>
-      <p class="main-text" id="hw2-text">
+      <h1 data-cy="hw2-main-title class="main-title" id="hw2-main-title">Мочалова Дарья Сергеевна</h1>
+      <p data-cy="hw2-text class="main-text" id="hw2-text">
         Люблю компьютерные игры, особенно RPG, конный спорт и хайкинг. Увлекаюсь
         digital art-ом.
       </p>
-      <img
+      <img data-cy="hw2-main-image"
         class="main-image"
         id="hw2-main-image"
         src="img/tyler-smith-birdgrassthumb01.webp"
@@ -44,11 +44,11 @@
       <!-- c) Фото (или любую картинку из интернета). Не забудь добавить описание на случай, если изображение не загрузится -->
     </section>
 
-    <section
+    <section data-cy="hw2-section-about-pre"
       class="about-section"
       id="hw2-section-about-pre"
     >
-      <select id="hw2-select-pre" name="" id="">
+      <select data-cy="hw2-select-pre" id="hw2-select-pre" name="" id="">
         <option value="">Екатеринбург</option>
         <option selected value="">Челябинск</option>
         <option value="">Ханой</option>
@@ -57,8 +57,8 @@
       <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
 
       <div>
-        <h2 class="section-title" id="hw2-section-title-pre">Любимые игры</h2>
-        <ul class="skills-list" id="hw2-skills-list-pre">
+        <h2 data-cy="hw2-section-title-pre" class="section-title" id="hw2-section-title-pre">Любимые игры</h2>
+        <ul data-cy="hw2-skills-list-pre" class="skills-list" id="hw2-skills-list-pre">
           <li>Witcher 3</li>
           <li>RDR 2</li>
           <li>Skyrim</li>
@@ -72,10 +72,10 @@
       </div>
 
       <div>
-        <h2 class="section-title" id="hw2-section-title-pre">
+        <h2 data-cy="hw2-section-title-pre" class="section-title" id="hw2-section-title-pre">
           Рейтинг любимых сериалов
         </h2>
-        <ol class="books-list" id="hw2-books-list-pre">
+        <ol data-cy="hw2-books-list-pre" class="books-list" id="hw2-books-list-pre">
           <li>Настоящий детектив</li>
           <li>Лучше звоните Солу</li>
           <li>Очень странные дела</li>
@@ -87,12 +87,12 @@
       </div>
 
       <div>
-        <h2 class="section-title" id="hw2-section-title-pre">Мои скиллы</h2>
-        <label class="label" for="box" id="hw2-label-pre" for="1">
+        <h2 data-cy="hw2-section-title-pre" class="section-title" id="hw2-section-title-pre">Мои скиллы</h2>
+        <label data-cy="hw2-label-pre" class="label" for="box" id="hw2-label-pre" for="1">
           <input id="box" type="checkbox" checked name="" id="1" />Блочная
           модель
         </label>
-        <label class="label" for="position" id="hw2-label-pre" for="2">
+        <label data-cy="hw2-label-pre" class="label" for="position" id="hw2-label-pre" for="2">
           <input
             id="position"
             type="checkbox"
@@ -101,11 +101,11 @@
             id="2"
           />Позиционирование элементов
         </label>
-        <label class="label" for="text" id="hw2-label-pre" for="3">
+        <label data-cy="hw2-label-pre" class="label" for="text" id="hw2-label-pre" for="3">
           <input id="text" type="checkbox" checked name="" id="3" />Оформление
           текста
         </label>
-        <label class="label" for="media" id="hw2-label-pre" for="4">
+        <label data-cy="hw2-label-pre" class="label" for="media" id="hw2-label-pre" for="4">
           <input id="media" type="checkbox" name="" id="4" />Медиа-запросы
         </label>
         <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
@@ -114,18 +114,18 @@
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
       </div>
       <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
-      <input
+      <input data-cy="hw2-text-field-pre"
         class="text-field"
         id="hw2-text-field-pre"
         type="text"
         placeholder="Новый скилл"
       />
       <!-- 6) Создай здесь кнопку “Добавить” -->
-      <button class="btn" id="hw2-btn-pre">Добавить</button>
-      <hr class="line" id="hw2-line-pre" />
+      <button data-cy="hw2-btn-pre" class="btn" id="hw2-btn-pre">Добавить</button>
+      <hr data-cy="hw2-line-pre" class="line" id="hw2-line-pre" />
       <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
 
-      <table id="hw2-about-table-pre" border="1">
+      <table data-cy="hw2-about-table-pre" id="hw2-about-table-pre" border="1">
         <tr>
           <th>п/п</th>
           <th>Ниманование</th>
@@ -156,8 +156,8 @@
                         - Добавь границы для всей таблицы с помощью специального атрибута border="". Он устарел, но работает
                         - В последнем ряду первая ячейка должна занимать все свободное место по горизонтали (ширине). Таблицу можно заполнять любыми данными -->
     </section>
-    <footer id="hw-footer-pre">
-      <a
+    <footer data-cy="hw-footer-pre" id="hw-footer-pre">
+      <a data-cy="hw-footer-link-pre"
         class="footer-link"
         id="hw-footer-link-pre"
         href="https://it-incubator.io/"
