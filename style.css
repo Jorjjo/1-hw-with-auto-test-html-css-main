@@ -159,14 +159,14 @@ select {
 
 .skills-list {
     list-style-image: url(img/arrow-for-list.svg);
-    padding-left: 23px;
+    padding: 20px;
     font-size: 16px;
     font-weight: 400;
   /* Стили для маркированного списка во второй секции */
 }
 
 .books-list {
-    padding-left: 23px;
+    padding: 20px;
     font-size: 16px;
     font-weight: 400;
   /* Стили для нумерованного списка во второй секции */
@@ -210,6 +210,8 @@ select {
 
 table {
     /* table-layout: fixed; */
+    font-size: 14px;
+    font-weight: 400;
     border: 1px solid #95A1BB;
     border-collapse: collapse;
   /* Стили для таблицы */
@@ -217,7 +219,6 @@ table {
 
 th,
 td {
-    font-size: 14px;
     font-weight: 400;
     padding: 12px 15px;
   /* Стили для ячеек таблицы */
@@ -225,7 +226,7 @@ td {
 
 footer {
     background-color: rgb(163, 167, 255, 30%);
-    padding: 26px 0px 27px 0;
+    padding: 26px 0px;
   /* Стили для футера */
 }
 
