@@ -159,14 +159,14 @@ select {
 
 .skills-list {
     list-style-image: url(img/arrow-for-list.svg);
-    padding: 20px;
+    padding: 0px 20px;
     font-size: 16px;
     font-weight: 400;
   /* Стили для маркированного списка во второй секции */
 }
 
 .books-list {
-    padding: 20px;
+    padding: 0 20px;
     font-size: 16px;
     font-weight: 400;
   /* Стили для нумерованного списка во второй секции */
@@ -234,5 +234,6 @@ footer {
     font-size: 14px;
     font-weight: 400;
     color: #2965F1;
+    text-decoration: none;
   /* Стили для футера */
 }
